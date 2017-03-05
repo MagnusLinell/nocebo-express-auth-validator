@@ -17,7 +17,8 @@ const validateUser = (req, res, next) => {
     return next({
       code: 'unauthorized'
     });
-  };
+  }
+  next();
 }
 
 module.exports = (options) => {
